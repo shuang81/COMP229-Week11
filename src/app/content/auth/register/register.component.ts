@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
     emailAddress: null,
     username: null,
     password: null,
-    confirmPassword: null
+    confirmPasword: null
   }
 
   isSignUpFailed = false;
@@ -34,7 +34,7 @@ export class RegisterComponent implements OnInit {
       emailAddress,
       username,
       password,
-      confirmPassword
+      confirmPasword
     } = this.form;
 
     this.authService.register(username, password, emailAddress, firstName + lastName).subscribe({
